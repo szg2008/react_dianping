@@ -1,3 +1,3 @@
-# react-simple-o2o-demo
+# react-dianping
 
-代码尚在开发中
+learning...
