@@ -36,7 +36,6 @@ class App extends React.Component {
                     ?this.props.children
                     :'加载中...'
                 }
-                {this.props.children}
             </div>
         )
     }
