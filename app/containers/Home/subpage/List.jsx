@@ -1,6 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { getListData } from '../../../fetch/home/home.js'
+import ListComponent from '../../../components/List'
 import './style.less'
 class List extends React.Component {
     constructor(props, context) {
@@ -37,10 +38,12 @@ class List extends React.Component {
         return (
             <div>
                 <h2 className="home-list-title">猜你喜欢</h2>
-                <div>
-                    {this.state.hasMore.toString()}
-                    {this.state.data.length}
-                </div>
+                {
+                    this.state.data.length
+                    ?<ListComponent data={this.state.data}/>
+                    :'加载中...'
+                }
+
             </div>
         )
     }

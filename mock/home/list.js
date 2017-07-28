@@ -2,7 +2,7 @@ module.exports = {
     hasMore: true,
     data: [
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201638030-473660627.png',
+            img: 'http://sns-img.b0.upaiyun.com/dunzd/1707/2808/14/150121947022711501200854.png',
             title: '汉堡大大',
             subTitle: '叫我汉堡大大，还你多彩口味',
             price: '28',
@@ -10,7 +10,7 @@ module.exports = {
             mumber: '389'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201645858-1342445625.png',
+            img: 'http://sns-img.b0.upaiyun.com/dunzd/1707/2808/14/150881899947051501200896.png',
             title: '北京开源饭店',
             subTitle: '[望京]自助晚餐',
             price: '98',
@@ -18,7 +18,7 @@ module.exports = {
             mumber: '689'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201652952-1050532278.png',
+            img: 'http://sns-img.b0.upaiyun.com/dunzd/1707/2808/15/150895268836391501200918.png',
             title: '服装定制',
             subTitle: '原价xx元，现价xx元，可修改一次',
             price: '1980',
@@ -26,7 +26,7 @@ module.exports = {
             mumber: '106'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201700186-1351787273.png',
+            img: 'http://sns-img.b0.upaiyun.com/dunzd/1707/2808/15/150267524759391501200942.png',
             title: '婚纱摄影',
             subTitle: '免费试穿，拍照留念',
             price: '2899',
@@ -34,7 +34,7 @@ module.exports = {
             mumber: '58'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201708124-1116595594.png',
+            img: 'http://sns-img.b0.upaiyun.com/dunzd/1707/2808/16/151072885813741501200965.png',
             title: '麻辣串串烧',
             subTitle: '双人免费套餐等你抢购',
             price: '0',
