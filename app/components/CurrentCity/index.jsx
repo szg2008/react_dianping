@@ -1,21 +1,21 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
-class Search extends React.Component {
+import './style.less'
+
+class CurrentCity extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {
         return (
-            <div>
-                <h1>Search</h1>
+            <div className="current-city">
+                {this.props.userinfo.cityName}
             </div>
         )
     }
-    componentDidMount(){
-        console.log(this.props.params)
-    }
 }
 
-module.exports = Search
+
+module.exports = CurrentCity

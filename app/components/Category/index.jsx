@@ -1,6 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import ReactSwipe from 'react-swipe'
+import { Link } from 'react-router'
 import './style.less'
 class Category extends React.Component {
     constructor(props, context) {
@@ -24,7 +25,7 @@ class Category extends React.Component {
                 <ReactSwipe swipeOptions={opt}>
                     <div className="carousel-item">
                         <ul className="clear-fix">
-                            <li className="float-left jingdian">景点</li>
+                            <Link to="/search/jingdian"><li className="float-left jingdian">景点</li></Link>
                             <li className="float-left ktv">KTV</li>
                             <li className="float-left gouwu">购物</li>
                             <li className="float-left shenghuofuwu">生活服务</li>
