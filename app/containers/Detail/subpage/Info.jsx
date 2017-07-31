@@ -1,7 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { getInfoData } from '../../../fetch/detail/detail.js'
-
+import DetailInfo from '../../../components/DetailInfo'
 class Info extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -16,7 +16,7 @@ class Info extends React.Component {
                 {
                     this.state.info
                     ?
-                    <div>Yes</div>
+                    <DetailInfo data={this.state.info}/>
                     :
                     ''
                 }
