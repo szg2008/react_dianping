@@ -1,13 +1,15 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-import { getInfoData } from '../../../fetch/detail/detail.js'
+
+import { getInfoData } from '../../../fetch/detail/detail'
 import DetailInfo from '../../../components/DetailInfo'
+
 class Info extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
         this.state = {
-            info:false
+            info: false
         }
     }
     render() {
@@ -15,25 +17,31 @@ class Info extends React.Component {
             <div>
                 {
                     this.state.info
-                    ?
-                    <DetailInfo data={this.state.info}/>
-                    :
-                    ''
+                    ? <DetailInfo data={this.state.info}/>
+                    : ''
                 }
             </div>
         )
     }
-    componentDidMount(){
-        let id = this.props.id
-        let result = getInfoData(id)
-        result.then(res=>(res.json()))
-        .then(json=>{
+    componentDidMount() {
+        // 获取商户信息
+        this.getInfo()
+    }
+    getInfo() {
+        const id = this.props.id
+        const result = getInfoData(id)
+        result.then(res => {
+            return res.json()
+        }).then(json => {
             this.setState({
-                info:json
+                info: json
             })
+        }).catch(ex => {
+            if (__DEV__) {
+                console.error('详情页，获取商户信息出错')
+            }
         })
     }
 }
 
-
-module.exports = Info
+export default Info
