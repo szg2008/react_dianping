@@ -5,6 +5,7 @@ import {connect} from 'react-redux'
 import { hashHistory } from 'react-router'
 import * as userInfoActionsFromOtherFile from '../../actions/userinfo'
 import Header from '../../components/Header'
+import LoginComponent from '../../components/Login'
 class Login extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -20,9 +21,8 @@ class Login extends React.Component {
                 {
                     this.state.checking
                     ?<div>等待中</div>
-                    :<div>登录页面</div>
+                    :<LoginComponent loginHandle={this.loginHandle.bind(this)}/>
                 }
-                {/**<LoginComponent loginHandle={this.loginHandle.bind(this)}/>*/}
             </div>
         )
     }
