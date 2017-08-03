@@ -9,13 +9,13 @@ export function update(data) {
 export function add(item) {
     return {
         type:actionTypes.STORE_ADD,
-        item
+        data:item
     }
 }
 
 export function rm(item) {
     return {
         type:actionTypes.STORE_RM,
-        item
+        data:item
     }
 }

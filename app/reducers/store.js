@@ -1,6 +1,6 @@
 import * as actionTypes from '../constants/store'
 
-const initialState = {}
+const initialState = []
 
 
 export default function store(state = initialState,action){
