@@ -5,6 +5,7 @@ import {connect} from 'react-redux'
 import { hashHistory } from 'react-router'
 import * as userInfoActionsFromOtherFile from '../../../actions/userinfo'
 import BuyAndStore from '../../../components/BuyAndStore'
+import * as storeActionsFromOtherFile from '../../../actions/store'
 class Buy extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -32,6 +33,10 @@ class Buy extends React.Component {
     }
     storeHandle(){
         //收藏事件
+        const loginFlag = this.loginCheck()
+        if(!loginFlag){
+            return
+        }
     }
     //验证登录
     loginCheck(){
@@ -44,17 +49,23 @@ class Buy extends React.Component {
         }
         return true
     }
+    componentDidMount(){
+        console.log(this.props.store)
+        console.log(this.props.storeActions)
+    }
 }
 
 function mapStateToProps(state){
     return{
-        userinfo:state.userinfo
+        userinfo:state.userinfo,
+        store:state.store
     }
 }
 
 function mapDispatchToProps(dispatch){
     return {
-        userInfoActions:bindActionCreators(userInfoActionsFromOtherFile,dispatch)
+        userInfoActions:bindActionCreators(userInfoActionsFromOtherFile,dispatch),
+        storeActions:bindActionCreators(storeActionsFromOtherFile,dispatch)
     }
 }
 
