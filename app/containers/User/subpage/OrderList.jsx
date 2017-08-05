@@ -1,6 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import {getOrderListData} from '../../../fetch/user/orderlist.js'
+import OrderListComponent from '../../../components/OrderList'
 import './style.less'
 class OrderList extends React.Component {
     constructor(props, context) {
@@ -16,7 +17,7 @@ class OrderList extends React.Component {
             <div className="order-list-container">
                 {
                     this.state.data.length
-                    ?<div>展示数据</div>
+                    ?<OrderListComponent data={this.state.data}/>
                     :<div></div>
                 }
             </div>
