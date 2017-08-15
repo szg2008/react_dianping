@@ -33,7 +33,7 @@ class City extends React.Component {
         //修改redux
         const userinfo = this.props.userinfo
         userinfo.cityName = newCity
-        this.props.userInfoActions.update(userinfo)
+        this.props.userInfoActions.update(userinfo)//通过bindActionCreators将action的方法绑定到dispatch上面
 
         //修改localStorage
         LocalStore.setItem(CITYNAME,newCity)
