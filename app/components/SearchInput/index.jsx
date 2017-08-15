@@ -1,6 +1,5 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-import ReactSwipe from 'react-swipe'
 import { Link } from 'react-router'
 import './style.less'
 class SearchInput extends React.Component {

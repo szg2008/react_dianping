@@ -12,7 +12,9 @@ import {CITYNAME} from '../../config/localStoreKey'
 class City extends React.Component {
     constructor(props, context) {
         super(props, context);
+        //组件性能优化方式
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
+        //在每次更新之前判断state和props是否有变化，如果有变化则返回true，没有变化则返回false
     }
     componentDidMount(){
         // console.log(this.props.userinfo,this.props.userInfoActions)

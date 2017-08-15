@@ -20,6 +20,8 @@ class App extends React.Component {
             cityName = '北京'
         }
 
+        //入口文件，首先从redux中获取cityName,如果没有，设置一个默认值
+
         //将城市信息存储到Redux中
         this.props.userInfoActions.update({
             cityName:cityName
@@ -49,7 +51,7 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
     return {
-        userInfoActions:bindActionCreators(userInfoActionsFromOtherFile,dispatch)
+        userInfoActions:bindActionCreators(userInfoActionsFromOtherFile,dispatch)//将相应的action通过dispatch派发出去
     }
 }
 
