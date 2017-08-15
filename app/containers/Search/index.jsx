@@ -12,7 +12,7 @@ class Search extends React.Component {
         return (
             <div>
                 <SearchHeader keyword={params.keyword}/>
-                <SearchList keyword={params.keyword} category={params.category}/>
+                <SearchList keyword={params.keyword} category={params.type}/>
             </div>
         )
     }

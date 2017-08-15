@@ -15,7 +15,7 @@ class City extends React.Component {
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     componentDidMount(){
-        // console.log(this.props.userinfo,this.props.userInfoActions)
+
     }
     render() {
         return (
