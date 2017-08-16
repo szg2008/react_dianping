@@ -96,7 +96,6 @@ class SearchList extends React.Component {
     // 处理重新搜索
     //页面再次渲染
     componentDidUpdate(prevProps, prevState) {
-        console.log(prevProps,prevState)
         const keyword = this.props.keyword
         const category = this.props.category
 

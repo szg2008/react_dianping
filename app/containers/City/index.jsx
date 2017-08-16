@@ -17,7 +17,7 @@ class City extends React.Component {
         //在每次更新之前判断state和props是否有变化，如果有变化则返回true，没有变化则返回false
     }
     componentDidMount(){
-        // console.log(this.props.userinfo,this.props.userInfoActions)
+
     }
     render() {
         return (
@@ -35,7 +35,7 @@ class City extends React.Component {
         //修改redux
         const userinfo = this.props.userinfo
         userinfo.cityName = newCity
-        this.props.userInfoActions.update(userinfo)
+        this.props.userInfoActions.update(userinfo)//通过bindActionCreators将action的方法绑定到dispatch上面
 
         //修改localStorage
         LocalStore.setItem(CITYNAME,newCity)

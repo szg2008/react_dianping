@@ -7,7 +7,8 @@ module.exports = {
             subTitle: '叫我汉堡大大，还你多彩口味',
             price: '28',
             distance: '120m',
-            mumber: '389'
+            mumber: '389',
+            id:12345
         },
         {
             img: 'http://sns-img.b0.upaiyun.com/dunzd/1707/2808/14/150881899947051501200896.png',
@@ -15,7 +16,8 @@ module.exports = {
             subTitle: '[望京]自助晚餐',
             price: '98',
             distance: '140m',
-            mumber: '689'
+            mumber: '689',
+            id:12245
         },
         {
             img: 'http://sns-img.b0.upaiyun.com/dunzd/1707/2808/15/150895268836391501200918.png',
@@ -23,7 +25,8 @@ module.exports = {
             subTitle: '原价xx元，现价xx元，可修改一次',
             price: '1980',
             distance: '160',
-            mumber: '106'
+            mumber: '106',
+            id:24556
         },
         {
             img: 'http://sns-img.b0.upaiyun.com/dunzd/1707/2808/15/150267524759391501200942.png',
@@ -31,7 +34,8 @@ module.exports = {
             subTitle: '免费试穿，拍照留念',
             price: '2899',
             distance: '160',
-            mumber: '58'
+            mumber: '58',
+            id:19850
         },
         {
             img: 'http://sns-img.b0.upaiyun.com/dunzd/1707/2808/16/151072885813741501200965.png',
@@ -39,7 +43,8 @@ module.exports = {
             subTitle: '双人免费套餐等你抢购',
             price: '0',
             distance: '160',
-            mumber: '1426'
+            mumber: '1426',
+            id:12197
         }
     ]
 }

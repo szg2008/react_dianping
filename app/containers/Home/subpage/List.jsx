@@ -15,7 +15,7 @@ class List extends React.Component {
             page:1,//下一页的页码
         }
     }
-    //获取首平数据
+    //获取首屏数据
     loadFirstPage(){
         const cityName = this.props.cityName
         const result = getListData(cityName,0)
